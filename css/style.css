@@ -181,8 +181,15 @@ a.p-11, a.p-13{
 a.p-13{
     color: #4a4a4a;
 }
+a.p-8{
+    color: #707070;
+    text-decoration: none;
+}
 a.p-11{
     color: #3d4094;
+}
+.p-12 a{
+    text-decoration: none !important;
 }
 .p-8{
     font-family: Avenir;
@@ -394,11 +401,12 @@ input[type='text'], input[type='tel'], input[type='email'], input[type='password
     font-weight: 900;
     color: #323366;
 }
-.walletBalance sup{
+.walletBalance small{
     font-family: Avenir;
     font-size: 16px;
     font-weight: 500;
     color: #707070;
+    margin-top: -40px !important;
 }
 .dashboard{
     border: 1px solid #e8e8e8;
@@ -414,7 +422,8 @@ input[type='text'], input[type='tel'], input[type='email'], input[type='password
     border: none;
 }
 .input-group input:focus{
-    border: none !important;
+    border-top: none !important;
+    box-shadow: none;
 }
 .table thead{
 }
@@ -542,6 +551,38 @@ select{
 .btn-soc{
     border-radius: 100% !important;
 }
+
+.checkbox-custom {
+    display: none;
+  }
+  .checkbox-custom-label {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .checkbox-custom + .checkbox-custom-label:before {
+    content: '';
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px; height: 20px;
+    padding: 2px; margin-right: 10px;
+  }
+  .checkbox-custom:checked + .checkbox-custom-label:after {
+    content: "";
+    padding: 2px;
+    position: absolute;
+    width: 1px;
+    height: 13px;
+    border: solid #707070;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    top: 2px; left: 5px;
+  }
 @media only screen and (max-width: 600px) {
     #home h3{
       font-size: 12px;
